@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/ui/widgets/text.dart';
 
 class WelcomeTextWidget extends StatelessWidget {
   const WelcomeTextWidget({
@@ -17,20 +18,15 @@ class WelcomeTextWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
-        Text(
-          welcomeText,
-          style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.w200,
-              decoration: TextDecoration.none),
+        MainText(
+          text: welcomeText,
+          size: 20,
+          fontWeight: FontWeight.w200,
         ),
-        Text(
-          welcomeTextTwo,
-          style: TextStyle(
-              fontSize: 30,
-              color: Colors.white,
-              decoration: TextDecoration.none),
+        MainText(
+          text: welcomeTextTwo,
+          size: 30,
+          fontWeight: FontWeight.w700,
         ),
       ],
     ));
