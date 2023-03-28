@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/ui/screens/screen_for_testing.dart';
 
-import 'ui/screens/welcome_screen.dart';
+import 'screens/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: WelcomeScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/ui/widgets/text.dart';
+import 'package:movie_app/widgets/other/text.dart';
 
 class WelcomeTextWidget extends StatelessWidget {
   const WelcomeTextWidget({

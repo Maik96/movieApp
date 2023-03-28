@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 
-import '../widgets/welcome_screen/previews_movies.dart';
-import '../widgets/welcome_screen/welcome_button.dart';
-import '../widgets/welcome_screen/welcome_text_widget.dart';
+import '../widgets/welcomescreen/previews_movies.dart';
+import '../widgets/welcomescreen/welcome_button.dart';
+import '../widgets/welcomescreen/welcome_text_widget.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
