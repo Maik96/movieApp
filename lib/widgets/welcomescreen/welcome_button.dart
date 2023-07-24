@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/screens/home_screen.dart';
 
 class WelcomeScreenButton extends StatefulWidget {
   const WelcomeScreenButton({
@@ -20,7 +21,12 @@ class _WelcomeScreenButtonState extends State<WelcomeScreenButton> {
             backgroundColor: Colors.grey,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20))),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const HomeScreen()),
+          );
+        },
         child: const Text("Explore"),
       ),
     );
