@@ -21,7 +21,10 @@ class _HomeScreenState extends State<HomeScreen> {
           return Container();
         });
       } else if (Platform.isIOS) {
-        return Container();
+        return Container(
+          height: 200,
+          width: 200,
+        );
       }
 
       return ErrorWidget("Error");

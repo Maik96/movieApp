@@ -27,7 +27,7 @@ class _WelcomeScreenButtonState extends State<WelcomeScreenButton> {
             MaterialPageRoute(builder: (context) => const HomeScreen()),
           );
         },
-        child: const Text("Explore"),
+        child: const Text("Exploree"),
       ),
     );
   }
