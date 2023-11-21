@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:movie_app/screens/home_screen.dart';
 
 class WelcomeScreenButton extends StatefulWidget {
@@ -21,13 +22,8 @@ class _WelcomeScreenButtonState extends State<WelcomeScreenButton> {
             backgroundColor: Colors.grey,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20))),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const HomeScreen()),
-          );
-        },
-        child: const Text("Exploree"),
+        onPressed: () => context.go("/homescreen"),
+        child: const Text("Explore"),
       ),
     );
   }
